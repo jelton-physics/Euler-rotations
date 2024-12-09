@@ -10,10 +10,12 @@ import nolds
 from lyapynov import ContinuousDS, DiscreteDS
 from lyapynov import mLCE, LCE, CLV, ADJ
 
+import sys
+sys.path.append(sys.path[0] + '/..')
+
 from ode_tools_new import plot_phase_sol, plot_phase_sol_3d, phase_portrait, plot_single_var_vs_time, plot_animation_soln_3d
 # from utils.ode_tools import plot_phase_sol, plot_phase_sol_3d, phase_portrait, plot_single_var_vs_time, plot_animation_soln_3d
 
-import sys
 np.set_printoptions(threshold=sys.maxsize)
 import warnings
 warnings.filterwarnings("ignore")
